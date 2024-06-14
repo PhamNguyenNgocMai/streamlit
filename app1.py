@@ -1,5 +1,3 @@
-pip install streamlit pillow numpy tensorflow gdown
-
 import streamlit as st
 from PIL import Image
 import numpy as np
