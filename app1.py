@@ -1,23 +1,3 @@
-import subprocess
-import sys
-
-# Danh sách các thư viện cần thiết
-required_libraries = [
-    'streamlit',
-    'pillow',
-    'numpy',
-    'tensorflow==2.10.0',  # Hoặc phiên bản TensorFlow mà bạn muốn sử dụng
-    'gdown'
-]
-
-# Hàm cài đặt các thư viện
-def install_libraries():
-    for lib in required_libraries:
-        subprocess.check_call([sys.executable, '-m', 'pip', 'install', lib])
-
-# Cài đặt các thư viện
-install_libraries()
-
 import streamlit as st
 from PIL import Image
 import numpy as np
